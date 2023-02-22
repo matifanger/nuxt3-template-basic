@@ -2,6 +2,20 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Features
+
+-   [x] Tailwind CSS
+-   [x] HeadlessUI
+-   [x] Pinia
+-   [x] VueUse
+-   [x] VueUse Head
+-   [x] Unlighthouse
+-   [x] Unplugin Icons
+-   [x] Prettier
+-   [x] ESLint
+-   [x] Vite
+-   [x] TypeScript
+
 ## Setup
 
 Make sure to install the dependencies:
