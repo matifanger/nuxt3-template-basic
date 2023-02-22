@@ -1,8 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 template - Basic Version
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a basic template for Nuxt 3. No examples inside, just a clean template.
+It is a great starting point for your next project.
 
-## Features
+## Motivation
+
+So I was looking for a Nuxt 3 template that I could use for my next project. I found a few, but they were either too complex or too simple. I wanted something in the middle. So I decided to create my own template. I hope you find it useful.
+
+## More templates
+
+[Firebase Version](https://github.com/matifanger/nuxt3-template-firebase)
+[Blog Version](https://github.com/matifanger/nuxt3-template-blog)
+[Portfolio Version](https://github.com/matifanger/nuxt3-template-portfolio)
+
+## What's included
 
 -   [x] [Tailwind CSS](https://tailwindcss.com/)
 -   [x] [HeadlessUI](https://headlessui.dev/)
@@ -15,6 +26,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 -   [x] ESLint (configured)
 -   [x] Vite
 -   [x] TypeScript
+
+[Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction)
 
 ## How to install more icon packages
 

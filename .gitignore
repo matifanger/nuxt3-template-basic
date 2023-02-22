@@ -5,9 +5,9 @@ node_modules
 .cache
 .output
 .env
+.unlighthouse/*
 dist
 nuxt.d.ts
 .output
 .idea
 yarn.lock
-.unlighthouse
