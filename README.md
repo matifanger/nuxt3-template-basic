@@ -4,17 +4,31 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Features
 
--   [x] Tailwind CSS
--   [x] HeadlessUI
--   [x] Pinia
--   [x] VueUse
--   [x] VueUse Head
--   [x] Unlighthouse
--   [x] Unplugin Icons
--   [x] Prettier
--   [x] ESLint
+-   [x] [Tailwind CSS](https://tailwindcss.com/)
+-   [x] [HeadlessUI](https://headlessui.dev/)
+-   [x] [Pinia](https://pinia.esm.dev/)
+-   [x] [VueUse](https://vueuse.org/)
+-   [x] [Unlighthouse](https://unlighthouse.dev/)
+-   [x] [Nuxt Image](https://v1.image.nuxtjs.org/get-started/)
+-   [x] [Uno CSS Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons/)
+-   [x] Prettier (configured)
+-   [x] ESLint (configured)
 -   [x] Vite
 -   [x] TypeScript
+
+## How to install more icon packages
+
+Available collections [here](https://icones.js.org/)
+
+```bash
+yarn add --dev @iconify-json/[the-collection-you-want]
+
+// example
+yarn add --dev @iconify-json/mdi
+
+// or install ALL of them
+yarn add --dev @iconify/json
+```
 
 ## Setup
 
@@ -36,21 +50,14 @@ pnpm install
 Start the development server on http://localhost:3000
 
 ```bash
+# yarn
+yarn dev
+
+# npm
 npm run dev
-```
 
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
+# pnpm
+pnpm dev
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
