@@ -31,10 +31,10 @@ const whatWeHave = [
         url: 'https://vueuse.org/',
     },
     {
-        title: 'VueUse Head',
-        image: 'https://vueuse.org/favicon.svg',
-        description: 'Super-charged head management.',
-        url: 'https://github.com/vueuse/head',
+        title: 'Nuxt Image',
+        image: 'https://i.imgur.com/3lExL6H.png',
+        description: 'Plug-and-play image optimization for Nuxt apps.',
+        url: 'https://v1.image.nuxtjs.org/get-started/',
     },
     {
         title: 'Unlighthouse',
@@ -54,7 +54,10 @@ const whatWeHave = [
 <template>
     <div class="mainpage">
         <div class="mainpage__wrapper">
-            <h1>Nuxt 3 Template - Basic Version</h1>
+            <h1>
+                Nuxt 3 Template - Basic Version
+                <div class="i-mdi:beta text-orange-400" />
+            </h1>
             <h2>What's included</h2>
             <div class="mainpage__items">
                 <NuxtLink
@@ -87,6 +90,9 @@ const whatWeHave = [
     @apply bg-[#0C0C0D] text-white flex flex-col justify-center items-center min-h-screen py-10;
     &__wrapper {
         @apply container w-full flex flex-col justify-center items-center gap-3;
+        & h1 {
+            @apply flex items-center gap-1;
+        }
     }
     & h2 {
         @apply text-4xl font-bold;
