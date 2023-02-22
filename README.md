@@ -9,7 +9,7 @@ So I was looking for a Nuxt 3 template that I could use for my next project. I f
 
 ## Preview
 
-![image](https://i.imgur.com/T7ICy3f.png)
+![image](https://i.imgur.com/Inor68b.png)
 
 ## More templates
 
@@ -29,6 +29,7 @@ WIP
 -   [x] [VueUse](https://vueuse.org/)
 -   [x] [Unlighthouse](https://unlighthouse.dev/)
 -   [x] [Nuxt Image](https://v1.image.nuxtjs.org/get-started/)
+-   [x] [Color Mode](https://color-mode.nuxtjs.org/)
 -   [x] [Uno CSS Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons/)
 -   [x] Prettier (configured)
 -   [x] ESLint (configured)

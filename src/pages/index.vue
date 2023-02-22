@@ -32,9 +32,15 @@ const whatWeHave = [
     },
     {
         title: 'Nuxt Image',
-        image: 'https://i.imgur.com/3lExL6H.png',
+        image: 'https://i.imgur.com/C9lDB1x.png',
         description: 'Plug-and-play image optimization for Nuxt apps.',
         url: 'https://v1.image.nuxtjs.org/get-started/',
+    },
+    {
+        title: 'Color Mode',
+        image: 'https://i.imgur.com/3lExL6H.png',
+        description: 'Dark and Light mode with auto detection made easy.',
+        url: 'https://color-mode.nuxtjs.org/',
     },
     {
         title: 'Unlighthouse',
