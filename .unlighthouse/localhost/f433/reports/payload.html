@@ -1,0 +1,764 @@
+<html><head><meta charset="utf-8">
+<title>Hello World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hello World"><link rel="preload" as="style" href="/_nuxt/@fs/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxtjs/tailwindcss/dist/runtime/tailwind.css"><link rel="preload" as="style" href="/_nuxt/@fs/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&amp;type=style&amp;index=0&amp;scoped=8dd555df&amp;lang.css"><link rel="preload" as="style" href="/_nuxt/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&amp;type=style&amp;index=0&amp;scoped=8dd555df&amp;lang.css"><link rel="modulepreload" as="script" crossorigin="" href="/_nuxt/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/nuxt/dist/app/entry.mjs"><link rel="stylesheet" href="/_nuxt/@fs/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxtjs/tailwindcss/dist/runtime/tailwind.css"><link rel="stylesheet" href="/_nuxt/@fs/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&amp;type=style&amp;index=0&amp;scoped=8dd555df&amp;lang.css"><link rel="stylesheet" href="/_nuxt/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&amp;type=style&amp;index=0&amp;scoped=8dd555df&amp;lang.css"><style type="text/css" data-vite-dev-id="D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/@nuxtjs/tailwindcss/dist/runtime/tailwind.css">/*
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-full {
+  width: 100%;
+}
+.max-w-7xl {
+  max-width: 80rem;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-\[\#18181B\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / 1);
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
+}
+.border-opacity-80 {
+  --tw-border-opacity: 0.8;
+}
+.bg-\[\#0C0C0D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 12 13 / 1);
+  background-color: rgb(12 12 13 / var(--tw-bg-opacity));
+}
+.p-0 {
+  padding: 0px;
+}
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / 1);
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 768px) {
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovUFJPWUVDVE9TL1ZVRUpTL05VWFQtMy9udXh0My10ZW1wbGF0ZS9ub2RlX21vZHVsZXMvQG51eHRqcy90YWlsd2luZGNzcy9kaXN0L3J1bnRpbWUvdGFpbHdpbmQuY3NzIiwibWFwcGluZ3MiOiJBQUFBOztDQUFjLENBQWQ7OztDQUFjOztBQUFkOzs7RUFBQSxzQkFBYyxFQUFkLE1BQWM7RUFBZCxlQUFjLEVBQWQsTUFBYztFQUFkLG1CQUFjLEVBQWQsTUFBYztFQUFkLHFCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztFQUFBLGdCQUFjO0FBQUE7O0FBQWQ7Ozs7OztDQUFjOztBQUFkO0VBQUEsZ0JBQWMsRUFBZCxNQUFjO0VBQWQsOEJBQWMsRUFBZCxNQUFjO0VBQWQsZ0JBQWMsRUFBZCxNQUFjO0VBQWQsY0FBYztLQUFkLFdBQWMsRUFBZCxNQUFjO0VBQWQsNE5BQWMsRUFBZCxNQUFjO0VBQWQsNkJBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7OztDQUFjOztBQUFkO0VBQUEsU0FBYyxFQUFkLE1BQWM7RUFBZCxvQkFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7OztDQUFjOztBQUFkO0VBQUEsU0FBYyxFQUFkLE1BQWM7RUFBZCxjQUFjLEVBQWQsTUFBYztFQUFkLHFCQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkO0VBQUEseUNBQWM7VUFBZCxpQ0FBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOzs7Ozs7RUFBQSxrQkFBYztFQUFkLG9CQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxjQUFjO0VBQWQsd0JBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7RUFBQSxtQkFBYztBQUFBOztBQUFkOzs7Q0FBYzs7QUFBZDs7OztFQUFBLCtHQUFjLEVBQWQsTUFBYztFQUFkLGNBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSxjQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7O0VBQUEsY0FBYztFQUFkLGNBQWM7RUFBZCxrQkFB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QjtBQUFuQjtFQUFBLHNCQUFtQjtFQUFuQiwrQkFBbUI7RUFBbkI7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQixtQ0FBbUI7RUFBbkI7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CLDJCQUFtQjtFQUFuQjtBQUFtQjtBQUZuQjs7RUFBQTtJQUFBO0dDQUE7Q0FBQTtBREFBOztFQUFBO0lBQUE7R0NBQTtDQUFBIiwibmFtZXMiOltdLCJzb3VyY2VzIjpbIkQ6L1BST1lFQ1RPUy9WVUVKUy9OVVhULTMvbnV4dDMtdGVtcGxhdGUvbm9kZV9tb2R1bGVzL0BudXh0anMvdGFpbHdpbmRjc3MvZGlzdC9ydW50aW1lL3RhaWx3aW5kLmNzcyIsIlx1MDAwMDxubyBzb3VyY2U+Il0sInNvdXJjZXNDb250ZW50IjpbIkB0YWlsd2luZCBiYXNlO1xuQHRhaWx3aW5kIGNvbXBvbmVudHM7XG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xuIixudWxsXSwidmVyc2lvbiI6M30= */</style><style type="text/css" data-vite-dev-id="D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/src/pages/index.vue?vue&amp;type=style&amp;index=0&amp;scoped=02281a80&amp;lang.postcss">
+.mainpage[data-v-02281a80] {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        --tw-bg-opacity: 1;
+        background-color: rgb(12 12 13 / 1);
+        background-color: rgb(12 12 13 / var(--tw-bg-opacity));
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / 1);
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.mainpage__wrapper[data-v-02281a80] {
+        width: 100%;
+}
+@media (min-width: 640px) {
+.mainpage__wrapper[data-v-02281a80] {
+                max-width: 640px;
+}
+}
+@media (min-width: 768px) {
+.mainpage__wrapper[data-v-02281a80] {
+                max-width: 768px;
+}
+}
+@media (min-width: 1024px) {
+.mainpage__wrapper[data-v-02281a80] {
+                max-width: 1024px;
+}
+}
+@media (min-width: 1280px) {
+.mainpage__wrapper[data-v-02281a80] {
+                max-width: 1280px;
+}
+}
+@media (min-width: 1536px) {
+.mainpage__wrapper[data-v-02281a80] {
+                max-width: 1536px;
+}
+}
+.mainpage__wrapper[data-v-02281a80] {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+}
+.mainpage h2[data-v-02281a80] {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+}
+.mainpage__items[data-v-02281a80] {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2.5rem;
+}
+@media (min-width: 768px) {
+.mainpage__items[data-v-02281a80] {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+@media (min-width: 1024px) {
+.mainpage__items[data-v-02281a80] {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+}
+.mainpage__items[data-v-02281a80] {
+        grid-auto-rows: 1fr;
+}
+.mainpage__items-card[data-v-02281a80] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 1rem;
+        border-width: 2px;
+        border-color: rgb(24 24 27 / 0.8);
+        border-color: rgb(24 24 27 / var(--tw-border-opacity));
+        --tw-border-opacity: 0.8;
+        padding: 0.125rem;
+}
+.mainpage__items-card[data-v-02281a80]:hover {
+                background: linear-gradient(
+                    90deg,
+                    #ff0000 0%,
+                    #ff7f00 12.5%,
+                    #ffff00 25%,
+                    #00ff00 37.5%,
+                    #0000ff 50%,
+                    #4b0082 62.5%,
+                    #8b00ff 75%,
+                    #ff0000 87.5%
+                );
+                background-size: 200% 200%;
+                animation: rainbow-02281a80 2s ease infinite;
+}
+@keyframes rainbow-02281a80 {
+0% {
+                        background-position: 0% 50%;
+}
+50% {
+                        background-position: 100% 50%;
+}
+100% {
+                        background-position: 0% 50%;
+}
+}
+.mainpage__items-card-body[data-v-02281a80] {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        border-radius: 0.75rem;
+        --tw-bg-opacity: 1;
+        background-color: rgb(12 12 13 / 1);
+        background-color: rgb(12 12 13 / var(--tw-bg-opacity));
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+}
+.mainpage__items-card-body img[data-v-02281a80] {
+        height: 2.5rem;
+        width: 2.5rem;
+        -o-object-fit: cover;
+           object-fit: cover;
+}
+.mainpage__items-card-body .title[data-v-02281a80] {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+        --tw-text-opacity: 1;
+        color: rgb(249 250 251 / 1);
+        color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+.mainpage__items-card-body .description[data-v-02281a80] {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / 1);
+        color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRDovUFJPWUVDVE9TL1ZVRUpTL05VWFQtMy9udXh0My10ZW1wbGF0ZS9zcmMvcGFnZXMvaW5kZXgudnVlIiwibWFwcGluZ3MiOiI7QUFpRkk7UUFBQSxhQUFxRjtRQUFyRixpQkFBcUY7UUFBckYsc0JBQXFGO1FBQXJGLG1CQUFxRjtRQUFyRix1QkFBcUY7UUFBckYsa0JBQXFGO1FBQXJGLG1DQUFxRjtRQUFyRixzREFBcUY7UUFBckYsb0JBQXFGO1FBQXJGLDJCQUFxRjtRQUFyRjtBQUFxRjtBQUVqRjtRQUFBO0FBQXVFO0FBQXZFO0FBQUE7Z0JBQUE7QUFBdUU7QUFBQTtBQUF2RTtBQUFBO2dCQUFBO0FBQXVFO0FBQUE7QUFBdkU7QUFBQTtnQkFBQTtBQUF1RTtBQUFBO0FBQXZFO0FBQUE7Z0JBQUE7QUFBdUU7QUFBQTtBQUF2RTtBQUFBO2dCQUFBO0FBQXVFO0FBQUE7QUFBdkU7UUFBQSxhQUF1RTtRQUF2RSxXQUF1RTtRQUF2RSxzQkFBdUU7UUFBdkUsbUJBQXVFO1FBQXZFLHVCQUF1RTtRQUF2RTtBQUF1RTtBQUd2RTtRQUFBLGtCQUF5QjtRQUF6QixtQkFBeUI7UUFBekI7QUFBeUI7QUFHekI7UUFBQSxrQkFBa0U7UUFBbEUsYUFBa0U7UUFBbEUsZ0RBQWtFO1FBQWxFO0FBQWtFO0FBQWxFO0FBQUE7Z0JBQUE7QUFBa0U7QUFBQTtBQUFsRTtBQUFBO2dCQUFBO0FBQWtFO0FBQUE7QUFEdEU7UUFFSSxtQkFBbUI7QUEwQ3ZCO0FBeENRO1FBQUEsYUFBcUg7UUFBckgsbUJBQXFIO1FBQXJILHVCQUFxSDtRQUFySCxnQkFBcUg7UUFBckgsbUJBQXFIO1FBQXJILGlCQUFxSDtRQUFySCxpQ0FBcUg7UUFBckgsc0RBQXFIO1FBQXJILHdCQUFxSDtRQUFySDtBQUFxSDtBQUNySDtnQkFDSTs7Ozs7Ozs7OztpQkFVQztnQkFDRCwwQkFBMEI7Z0JBQzFCLDRDQUFtQztBQVl2QztBQVhJO0FBQ0k7d0JBQ0ksMkJBQTJCO0FBQy9CO0FBQ0E7d0JBQ0ksNkJBQTZCO0FBQ2pDO0FBQ0E7d0JBQ0ksMkJBQTJCO0FBQy9CO0FBQ0o7QUFHQTtRQUFBLGFBQTBGO1FBQTFGLFlBQTBGO1FBQTFGLFdBQTBGO1FBQTFGLHNCQUEwRjtRQUExRix1QkFBMEY7UUFBMUYsV0FBMEY7UUFBMUYsc0JBQTBGO1FBQTFGLGtCQUEwRjtRQUExRixtQ0FBMEY7UUFBMUYsc0RBQTBGO1FBQTFGLG9CQUEwRjtRQUExRixxQkFBMEY7UUFBMUYsb0JBQTBGO1FBQTFGO0FBQTBGO0FBRXRGO1FBQUEsY0FBNkI7UUFBN0IsYUFBNkI7UUFBN0Isb0JBQTZCO1dBQTdCO0FBQTZCO0FBRzdCO1FBQUEsa0JBQXFDO1FBQXJDLG9CQUFxQztRQUFyQyxnQkFBcUM7UUFBckMsb0JBQXFDO1FBQXJDLDJCQUFxQztRQUFyQztBQUFxQztBQUdyQztRQUFBLG9CQUFvQjtRQUFwQiwyQkFBb0I7UUFBcEI7QUFBb0IiLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiRDovUFJPWUVDVE9TL1ZVRUpTL05VWFQtMy9udXh0My10ZW1wbGF0ZS9zcmMvcGFnZXMvaW5kZXgudnVlIl0sInNvdXJjZXNDb250ZW50IjpbIjxzY3JpcHQgbGFuZz1cInRzXCIgc2V0dXA+XHJcbnVzZUhlYWQoe1xyXG4gICAgdGl0bGU6ICdIZWxsbyBXb3JsZCcsXHJcbiAgICAvLyB0aXRsZVRlbXBsYXRlOiAodGl0bGUpID0+IGAke3RpdGxlfSB8IE15U2l0ZWAsXHJcbiAgICBtZXRhOiBbeyBuYW1lOiAnZGVzY3JpcHRpb24nLCBjb250ZW50OiAnSGVsbG8gV29ybGQnIH1dLFxyXG59KVxyXG5cclxuY29uc3Qgd2hhdFdlSGF2ZSA9IFtcclxuICAgIHtcclxuICAgICAgICB0aXRsZTogJ1RhaWx3aW5kQ1NTJyxcclxuICAgICAgICBpbWFnZTogJ2h0dHBzOi8vY2RuLmljb24taWNvbnMuY29tL2ljb25zMi8yNjk5L1BORy81MTIvdGFpbHdpbmRjc3NfbG9nb19pY29uXzE2NzkyMy5wbmcnLFxyXG4gICAgICAgIGRlc2NyaXB0aW9uOiAnQSB1dGlsaXR5LWZpcnN0IENTUyBmcmFtZXdvcmsuJyxcclxuICAgICAgICB1cmw6ICdodHRwczovL3RhaWx3aW5kY3NzLmNvbS8nLFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgICB0aXRsZTogJ0hlYWRsZXNzIFVJJyxcclxuICAgICAgICBpbWFnZTogJy9hc3NldHMvaGVhZGxlc3N1aS1pY29uLnN2ZycsXHJcbiAgICAgICAgZGVzY3JpcHRpb246ICdDb21wbGV0ZWx5IHVuc3R5bGVkLCBmdWxseSBhY2Nlc3NpYmxlIFVJIGNvbXBvbmVudHMuJyxcclxuICAgICAgICB1cmw6ICdodHRwczovL2hlYWRsZXNzdWkuZGV2LycsXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICAgIHRpdGxlOiAnUGluaWEnLFxyXG4gICAgICAgIGltYWdlOiAnaHR0cHM6Ly9waW5pYS5lc20uZGV2L2xvZ28uc3ZnJyxcclxuICAgICAgICBkZXNjcmlwdGlvbjogJ0Egc3RvcmUgZm9yIFZ1ZSBhcHBsaWNhdGlvbnMuJyxcclxuICAgICAgICB1cmw6ICdodHRwczovL3BpbmlhLmVzbS5kZXYvJyxcclxuICAgIH0sXHJcbiAgICB7XHJcbiAgICAgICAgdGl0bGU6ICdWdWVVc2UnLFxyXG4gICAgICAgIGltYWdlOiAnaHR0cHM6Ly92dWV1c2Uub3JnL2Zhdmljb24uc3ZnJyxcclxuICAgICAgICBkZXNjcmlwdGlvbjogJ0EgY29sbGVjdGlvbiBvZiBlc3NlbnRpYWwgQ29tcG9zaXRpb24gQVBJIGZ1bmN0aW9ucy4nLFxyXG4gICAgICAgIHVybDogJ2h0dHBzOi8vdnVldXNlLm9yZy8nLFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgICB0aXRsZTogJ1Z1ZVVzZSBIZWFkJyxcclxuICAgICAgICBpbWFnZTogJ2h0dHBzOi8vdnVldXNlLm9yZy9mYXZpY29uLnN2ZycsXHJcbiAgICAgICAgZGVzY3JpcHRpb246ICdTdXBlci1jaGFyZ2VkIGhlYWQgbWFuYWdlbWVudC4nLFxyXG4gICAgICAgIHVybDogJ2h0dHBzOi8vZ2l0aHViLmNvbS92dWV1c2UvaGVhZCcsXHJcbiAgICB9LFxyXG4gICAge1xyXG4gICAgICAgIHRpdGxlOiAnVW5saWdodGhvdXNlJyxcclxuICAgICAgICBpbWFnZTogJ2h0dHBzOi8vZDMzd3VicmZraTBsNjguY2xvdWRmcm9udC5uZXQvNjRjYTgzNWJjMDBkNDMzZjk5MDYxMGE2ZTYxNmI2NWJiNmY3MDExOC82ODgwMS9sb2dvLWxpZ2h0LnN2ZycsXHJcbiAgICAgICAgZGVzY3JpcHRpb246ICdMaWtlIExpZ2h0aG91c2UsIGJ1dCBpdCBzY2FucyBldmVyeSBzaW5nbGUgcGFnZS4nLFxyXG4gICAgICAgIHVybDogJ2h0dHBzOi8vdW5saWdodGhvdXNlLmRldi8nLFxyXG4gICAgfSxcclxuICAgIHtcclxuICAgICAgICB0aXRsZTogJ1VubyBJY29ucycsXHJcbiAgICAgICAgaW1hZ2U6ICdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vdW5vY3NzL3Vub2Nzcy9tYWluL3BsYXlncm91bmQvcHVibGljL2ljb24tZ3JheS5zdmcnLFxyXG4gICAgICAgIGRlc2NyaXB0aW9uOiAnVXNlIGFueSBpY29ucyB3aXRoIFB1cmUgQ1NTIGZvciBVbm9DU1MuJyxcclxuICAgICAgICB1cmw6ICdodHRwczovL2dpdGh1Yi5jb20vdW5vY3NzL3Vub2Nzcy90cmVlL21haW4vcGFja2FnZXMvcHJlc2V0LWljb25zLycsXHJcbiAgICB9LFxyXG5dXHJcbjwvc2NyaXB0PlxyXG5cclxuPHRlbXBsYXRlPlxyXG4gICAgPGRpdiBjbGFzcz1cIm1haW5wYWdlXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cIm1haW5wYWdlX193cmFwcGVyXCI+XHJcbiAgICAgICAgICAgIDxoMT5OdXh0IDMgVGVtcGxhdGUgLSBCYXNpYyBWZXJzaW9uPC9oMT5cclxuICAgICAgICAgICAgPGgyPldoYXQncyBpbmNsdWRlZDwvaDI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJtYWlucGFnZV9faXRlbXNcIj5cclxuICAgICAgICAgICAgICAgIDxOdXh0TGlua1xyXG4gICAgICAgICAgICAgICAgICAgIDp0bz1cIml0ZW0udXJsXCJcclxuICAgICAgICAgICAgICAgICAgICB2LWZvcj1cIihpdGVtLCBrZXkpIGluIHdoYXRXZUhhdmVcIlxyXG4gICAgICAgICAgICAgICAgICAgIDprZXk9XCJrZXlcIlxyXG4gICAgICAgICAgICAgICAgICAgIGNsYXNzPVwibWFpbnBhZ2VfX2l0ZW1zLWNhcmRcIlxyXG4gICAgICAgICAgICAgICAgICAgIHRhcmdldD1cIl9ibGFua1wiXHJcbiAgICAgICAgICAgICAgICA+XHJcbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cIm1haW5wYWdlX19pdGVtcy1jYXJkLWJvZHlcIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgPGltZyA6c3JjPVwiaXRlbS5pbWFnZVwiIGFsdD1cIlwiIC8+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxoMyBjbGFzcz1cInRpdGxlXCI+e3sgaXRlbS50aXRsZSB9fTwvaDM+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPVwiZGVzY3JpcHRpb25cIj5cclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIHt7IGl0ZW0uZGVzY3JpcHRpb24gfX1cclxuICAgICAgICAgICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPC9OdXh0TGluaz5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuPC90ZW1wbGF0ZT5cclxuXHJcbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiIHNjb3BlZD5cclxuLm1haW5wYWdlIHtcclxuICAgIEBhcHBseSBiZy1bIzBDMEMwRF0gdGV4dC13aGl0ZSBmbGV4IGZsZXgtY29sIGp1c3RpZnktY2VudGVyIGl0ZW1zLWNlbnRlciBtaW4taC1zY3JlZW47XHJcbiAgICAmX193cmFwcGVyIHtcclxuICAgICAgICBAYXBwbHkgY29udGFpbmVyIHctZnVsbCBmbGV4IGZsZXgtY29sIGp1c3RpZnktY2VudGVyIGl0ZW1zLWNlbnRlciBnYXAtMztcclxuICAgIH1cclxuICAgICYgaDIge1xyXG4gICAgICAgIEBhcHBseSB0ZXh0LTR4bCBmb250LWJvbGQ7XHJcbiAgICB9XHJcbiAgICAmX19pdGVtcyB7XHJcbiAgICAgICAgQGFwcGx5IGdyaWQgZ3JpZC1jb2xzLTEgbWQ6Z3JpZC1jb2xzLTIgbGc6Z3JpZC1jb2xzLTMgZ2FwLTEwIG10LTEwO1xyXG4gICAgICAgIGdyaWQtYXV0by1yb3dzOiAxZnI7XHJcbiAgICAgICAgJi1jYXJkIHtcclxuICAgICAgICAgICAgQGFwcGx5IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIHJvdW5kZWQtMnhsIGJvcmRlci0yIGJvcmRlci1bIzE4MTgxQl0gYm9yZGVyLW9wYWNpdHktODAgb3ZlcmZsb3ctaGlkZGVuIHAtMC41O1xyXG4gICAgICAgICAgICAmOmhvdmVyIHtcclxuICAgICAgICAgICAgICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudChcclxuICAgICAgICAgICAgICAgICAgICA5MGRlZyxcclxuICAgICAgICAgICAgICAgICAgICAjZmYwMDAwIDAlLFxyXG4gICAgICAgICAgICAgICAgICAgICNmZjdmMDAgMTIuNSUsXHJcbiAgICAgICAgICAgICAgICAgICAgI2ZmZmYwMCAyNSUsXHJcbiAgICAgICAgICAgICAgICAgICAgIzAwZmYwMCAzNy41JSxcclxuICAgICAgICAgICAgICAgICAgICAjMDAwMGZmIDUwJSxcclxuICAgICAgICAgICAgICAgICAgICAjNGIwMDgyIDYyLjUlLFxyXG4gICAgICAgICAgICAgICAgICAgICM4YjAwZmYgNzUlLFxyXG4gICAgICAgICAgICAgICAgICAgICNmZjAwMDAgODcuNSVcclxuICAgICAgICAgICAgICAgICk7XHJcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDIwMCUgMjAwJTtcclxuICAgICAgICAgICAgICAgIGFuaW1hdGlvbjogcmFpbmJvdyAycyBlYXNlIGluZmluaXRlO1xyXG4gICAgICAgICAgICAgICAgQGtleWZyYW1lcyByYWluYm93IHtcclxuICAgICAgICAgICAgICAgICAgICAwJSB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtcG9zaXRpb246IDAlIDUwJTtcclxuICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgNTAlIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1wb3NpdGlvbjogMTAwJSA1MCU7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgIDEwMCUge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiAwJSA1MCU7XHJcbiAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICYtYm9keSB7XHJcbiAgICAgICAgICAgICAgICBAYXBwbHkgZmxleCBmbGV4LWNvbCBqdXN0aWZ5LWNlbnRlciBiZy1bIzBDMEMwRF0gZ2FwLTIgcHgtMTAgcHktNyBoLWZ1bGwgdy1mdWxsIHJvdW5kZWQteGw7XHJcbiAgICAgICAgICAgICAgICAmIGltZyB7XHJcbiAgICAgICAgICAgICAgICAgICAgQGFwcGx5IHctMTAgaC0xMCBvYmplY3QtY292ZXI7XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAmIC50aXRsZSB7XHJcbiAgICAgICAgICAgICAgICAgICAgQGFwcGx5IHRleHQteGwgZm9udC1ib2xkIHRleHQtZ3JheS01MDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICYgLmRlc2NyaXB0aW9uIHtcclxuICAgICAgICAgICAgICAgICAgICBAYXBwbHkgdGV4dC1ncmF5LTQwMDtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgIH1cclxufVxyXG48L3N0eWxlPlxyXG4iXX0= */</style></head>
+<body><div id="__nuxt"><!--[--><!--[--><!--[--><div class="mainpage" data-v-02281a80=""><div class="mainpage__wrapper" data-v-02281a80=""><h1 data-v-02281a80="">Nuxt 3 Template - Basic Version</h1><h2 data-v-02281a80="">What's included</h2><div class="mainpage__items" data-v-02281a80=""><!--[--><a href="https://tailwindcss.com/" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tailwindcss_logo_icon_167923.png" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">TailwindCSS</h3><p class="description" data-v-02281a80="">A utility-first CSS framework.</p></div></a><a href="https://headlessui.dev/" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="/assets/headlessui-icon.svg" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">Headless UI</h3><p class="description" data-v-02281a80="">Completely unstyled, fully accessible UI components.</p></div></a><a href="https://pinia.esm.dev/" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="https://pinia.esm.dev/logo.svg" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">Pinia</h3><p class="description" data-v-02281a80="">A store for Vue applications.</p></div></a><a href="https://vueuse.org/" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="https://vueuse.org/favicon.svg" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">VueUse</h3><p class="description" data-v-02281a80="">A collection of essential Composition API functions.</p></div></a><a href="https://github.com/vueuse/head" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="https://vueuse.org/favicon.svg" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">VueUse Head</h3><p class="description" data-v-02281a80="">Super-charged head management.</p></div></a><a href="https://unlighthouse.dev/" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="https://d33wubrfki0l68.cloudfront.net/64ca835bc00d433f990610a6e616b65bb6f70118/68801/logo-light.svg" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">Unlighthouse</h3><p class="description" data-v-02281a80="">Like Lighthouse, but it scans every single page.</p></div></a><a href="https://github.com/unocss/unocss/tree/main/packages/preset-icons/" rel="noopener noreferrer" target="_blank" class="mainpage__items-card" data-v-02281a80=""><div class="mainpage__items-card-body" data-v-02281a80=""><img src="https://raw.githubusercontent.com/unocss/unocss/main/playground/public/icon-gray.svg" alt="" data-v-02281a80=""><h3 class="title" data-v-02281a80="">Uno Icons</h3><p class="description" data-v-02281a80="">Use any icons with Pure CSS for UnoCSS.</p></div></a><!--]--></div></div></div><!--]--><!--]--><!--]--></div><script>window.__NUXT__={data:{},state:{},_errors:{},serverRendered:true,config:{public:{},app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""}},pinia:{}}</script><script type="module" src="/_nuxt/@vite/client" crossorigin=""></script><script type="module" src="/_nuxt/D:/PROYECTOS/VUEJS/NUXT-3/nuxt3-template/node_modules/nuxt/dist/app/entry.mjs" crossorigin=""></script>
+</body></html>
