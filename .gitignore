@@ -6,3 +6,14 @@ node_modules
 .output
 .env
 dist
+nuxt.d.ts
+.output
+.idea
+yarn.lock
+
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
