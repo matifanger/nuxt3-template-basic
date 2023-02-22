@@ -1,17 +1,25 @@
-# Nuxt 3 template - Basic Version
+#
 
-This is a basic template for Nuxt 3. No examples inside, just a clean template.
-It is a great starting point for your next project.
+<h1 align="center">Nuxt 3 template - Basic Version</h1>
+<p align=center>A basic template for Nuxt 3. No examples inside, just a <u>clean template</u> 🙌</p>
 
 ## Motivation
 
 So I was looking for a Nuxt 3 template that I could use for my next project. I found a few, but they were either too complex or too simple. I wanted something in the middle. So I decided to create my own template. I hope you find it useful.
 
+## Preview
+
+![image](https://i.imgur.com/T7ICy3f.png)
+
 ## More templates
 
+WIP
+
+<!--
 [Firebase Version](https://github.com/matifanger/nuxt3-template-firebase)
 [Blog Version](https://github.com/matifanger/nuxt3-template-blog)
 [Portfolio Version](https://github.com/matifanger/nuxt3-template-portfolio)
+-->
 
 ## What's included
 
@@ -46,6 +54,8 @@ yarn add --dev @iconify/json
 ## Setup
 
 Make sure to install the dependencies:
+
+You can use any package manager you want (yarn, npm, pnpm, etc.)
 
 ```bash
 # yarn
