@@ -12,7 +12,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
     "@iconify-json/mdi": "^1.1.47",
-    "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
+    "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
     "@nuxt/kit": "^3.2.2",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.4.0",
