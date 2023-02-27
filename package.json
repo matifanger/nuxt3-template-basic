@@ -10,7 +10,7 @@
     "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.35.2",
+    "@antfu/eslint-config": "^0.35.3",
     "@iconify-json/mdi": "^1.1.47",
     "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
     "@nuxt/kit": "^3.2.2",
