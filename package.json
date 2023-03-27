@@ -13,7 +13,7 @@
     "@antfu/eslint-config": "^0.36.0",
     "@iconify-json/mdi": "^1.1.49",
     "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
-    "@nuxt/kit": "^3.2.3",
+    "@nuxt/kit": "^3.3.2",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.4.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
