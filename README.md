@@ -1,7 +1,7 @@
 <h1 align="center">Nuxt 3 template - Basic Version</h1>
 <p align=center>A basic template for Nuxt 3. No examples inside, just a <u>clean template</u> 🙌</p>
 <p align="center">
-  <a href="https://nuxt3-template-firebase.netlify.app/" target="_blank">Online Preview</a>
+  <a href="https://nuxt3-template-basic.netlify.app/" target="_blank">Online Preview</a>
 </p>
 
 ## Preview
