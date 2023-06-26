@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         '@unocss/nuxt',
         '@unlighthouse/nuxt',
         'nuxt-headlessui',
-      ],
+    ],
 
     postcss: {
         plugins: {
@@ -28,41 +28,43 @@ export default defineNuxtConfig({
 
     // How to install more icons packages -> README.md
     unocss: {
-      uno: false,
-      preflight: false,
-      icons: true,
-      presets: [
-          presetIcons({
-              scale: 1.2,
-              extraProperties: {
-                  display: 'inline-block',
-              },
-          }),
-      ],
+        uno: false,
+        preflight: false,
+        icons: true,
+        presets: [
+            presetIcons({
+                scale: 1.2,
+                extraProperties: {
+                    display: 'inline-block',
+                },
+            }),
+        ],
     },
 
     css: ['@/assets/css/main.pcss', '@/assets/css/tailwind.css'],
 
     vueuse: {
-      ssrHandlers: true,
+        ssrHandlers: true,
     },
 
     sourcemap: {
-      server: true,
-      client: true,
+        server: true,
+        client: true,
     },
 
     colorMode: {
-      classSuffix: '',
-      fallback: 'light',
-      storageKey: 'color-mode',
+        classSuffix: '',
+        fallback: 'light',
+        storageKey: 'color-mode',
     },
+
+    devtools: { enabled: true },
 
     vite: {
         build: {
-          sourcemap: true
+            sourcemap: true,
         },
         clearScreen: true,
-        logLevel: 'info'
-    }
+        logLevel: 'info',
+    },
 })

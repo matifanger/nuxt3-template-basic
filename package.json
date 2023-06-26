@@ -12,23 +12,24 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",
     "@iconify-json/mdi": "^1.1.52",
+    "@nuxt/devtools": "^0.6.4",
     "@nuxt/image-edge": "1.0.0-rc.1-28112642.b1c2038",
-    "@nuxt/kit": "^3.5.3",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "@nuxtjs/tailwindcss": "^6.7.2",
+    "@nuxt/kit": "^3.6.1",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@unlighthouse/nuxt": "^0.8.7",
-    "@unocss/nuxt": "^0.53.1",
-    "eslint": "^8.42.0",
+    "@unocss/nuxt": "^0.53.4",
+    "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.14.1",
-    "nuxt": "^3.5.3",
+    "nuxt": "^3.6.1",
     "nuxt-headlessui": "^1.1.4"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
-    "@vueuse/nuxt": "^10.1.2"
+    "@vueuse/nuxt": "^10.2.0"
   }
 }
