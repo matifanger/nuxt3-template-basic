@@ -3,7 +3,6 @@
 <template>
     <Html lang="en">
         <Body>
-            <SeoKit />
             <NuxtLayout>
                 <NuxtLoadingIndicator />
                 <NuxtPage />
