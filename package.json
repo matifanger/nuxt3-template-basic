@@ -22,7 +22,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@unlighthouse/nuxt": "^0.8.7",
     "@unocss/nuxt": "^0.53.4",
-    "eslint": "^8.43.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-vue": "^9.14.1",
     "nuxt": "^3.6.1",
